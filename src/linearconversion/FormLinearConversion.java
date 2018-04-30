@@ -158,6 +158,9 @@ public class FormLinearConversion extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int conversion = Integer.parseInt(jTextField1.getText());
         double value1 = Double.parseDouble(jTextField2.getText());
+        /**
+         * Checking the type of conversion
+         */
         if(conversion == 1){
             jLabel9.setText(value1+" inches = "+inchesToCentimeters(value1)+" centimeters");
         }
@@ -187,6 +190,11 @@ public class FormLinearConversion extends javax.swing.JFrame {
             jLabel9.setText("Please select a valid conversion.");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+    /**
+     * public methods for each conversion
+     * @param value1
+     * @return value2
+     */
     public static double inchesToCentimeters(double value1) {
         double value2 = value1 * 2.54;
         return value2;
