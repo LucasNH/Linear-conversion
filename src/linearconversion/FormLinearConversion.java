@@ -191,7 +191,7 @@ public class FormLinearConversion extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
     /**
-     * public methods for each conversion
+     * Conversion from inches to centimeters
      * @param value1
      * @return value2
      */
@@ -199,30 +199,65 @@ public class FormLinearConversion extends javax.swing.JFrame {
         double value2 = value1 * 2.54;
         return value2;
     }
+    /**
+     * Conversion from centimeters to inches
+     * @param value1
+     * @return value2
+     */
     public static double centimetersToInches(double value1) {
         double value2 = value1 / 2.54;
         return value2;
     }
+    /**
+     * Conversion from feet to centimeters
+     * @param value1
+     * @return value2
+     */
     public static double feetToCentimeters(double value1) {
         double value2 = value1 * 30;
         return value2;
     }
+    /**
+     * Conversion from centimeters to feet
+     * @param value1
+     * @return value2
+     */
     public static double centimetersToFeet(double value1) {
         double value2 = value1 / 30;
         return value2;
     }
+    /**
+     * Conversion from yards to meters
+     * @param value1
+     * @return value2
+     */
     public static double yardsToMeters(double value1) {
         double value2 = value1 * 0.91;
         return value2;
     }
+    /**
+     * Conversion from meters to yards
+     * @param value1
+     * @return value2
+     */
     public static double metersToYards(double value1) {
         double value2 = value1 / 0.91;
         return value2;
     }
+    /**
+     * Conversion from miles to kilometers
+     * @param value1
+     * @return value2
+     */
     public static double milesToKilometers(double value1) {
         double value2 = value1 * 1.6;
         return value2;
     }
+    /**
+     * Conversion from kilometers to miles
+     * @param value1
+     * @return value2
+     */
     public static double kilometersToMiles(double value1) {
         double value2 = value1 / 1.6;
         return value2;
